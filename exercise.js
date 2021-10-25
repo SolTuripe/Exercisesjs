@@ -17,11 +17,27 @@ function escribirTitulo(title) {
 
 escribirTitulo("Hola, Tobi");
 
+
+
 //Teniendo un cuadrado de color rojo en el documento de HTML:
 //Desarrollar una función que, al hacer click en el mismo, éste se transforme en una círculo de color verde
 
-function changeColor() {
-  let elemento = document.getElementById("circulo");
-  elemento.classList.remove("cuadrado");
-  elemento.classList.add("circle");
+let ricardo = document.querySelector(".target");
+
+function clickFunction() {
+  if (ricardo.classList.contains("cuadrado")) {
+    ricardo.classList.remove("cuadrado");
+    ricardo.classList.add("circle");
+  } else {
+    ricardo.classList.remove("circle");
+    ricardo.classList.add("cuadrado");
+  }
 }
+
+ricardo.addEventListener("click", clickFunction);
+
+
+
+//Teniendo un input de texto y un botón:
+//Desarrollar una función que al hacer click en él, escriba el contenido (value) del input como un título en el documento
+
