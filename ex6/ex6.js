@@ -1,0 +1,1 @@
+//Develop a function that draws a 'Card' from a movie in the document using a javascript object as data.
