@@ -11,7 +11,6 @@ function print() {
 
 print(listaAnimales);
 
-
 //Otra forma
 /*
 function print(lista) {
